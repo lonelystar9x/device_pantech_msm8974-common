@@ -328,7 +328,7 @@
     <!-- If true, the doze component is not started until after the screen has been
          turned off and the screen off animation has been performed. -->
     <bool name="config_dozeAfterScreenOffByDefault">true</bool>
-    
+
     <!-- Allow automatic adjusting of the screen brightness while dozing in low power state. -->
     <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
 
@@ -392,13 +392,31 @@
 
     <!-- Disable AOD by default -->
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
-    
+
     <!-- Whether the device supports Smart Pixels -->
     <bool name="config_enableSmartPixels">true</bool>
 
     <!-- BurnIn protection. This should be enabled on devices that have OLED displays -->
     <bool name="config_enableBurnInProtection">true</bool>
-    
+
      <!-- Whether device ignores the RSSNR signal implementation -->
      <bool name="config_ignoreRssnrSignalLevel">true</bool>
+
+    <!-- SysInfo -->
+    <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone7/temp</string>
+    <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
+    <string name="config_sysGPUFreq">/sys/class/kgsl/kgsl-3d0/gpufreq_mhz</string>
+    <string name="config_sysGPULoad">/sys/class/kgsl/kgsl-3d0/gpubusy_percentage</string>
+    <integer name="config_sysCPUTempMultiplier">1</integer>
+    <integer name="config_sysBatteryTempMultiplier">10</integer>
+
+    <!-- Smart charge sysfs node and value for suspend/resume charging-->
+    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
+    <string name="config_SmartChargingSupspendValue" translatable="false">0</string>
+    <string name="config_SmartChargingResumeValue" translatable="false">1</string>
+
+    <!-- The list of components which should be automatically disabled for a specific device. -->
+    <string-array name="config_deviceDisabledComponents" translatable="false">
+        <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
+    </string-array>
 </resources>
