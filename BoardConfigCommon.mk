@@ -71,7 +71,7 @@ AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
 AUDIO_FEATURE_ENABLED_NEW_SAMPLE_RATE := true
 AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 AUDIO_FEATURE_LOW_LATENCY_PRIMARY := true
-# USE_CUSTOM_AUDIO_POLICY := 1
+USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
 
@@ -95,9 +95,6 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 # Offmode Charging
 BOARD_HEALTHD_CUSTOM_CHARGER_RES := $(COMMON_PATH)/charger/images
 
-# Lineage Hardware
-BOARD_HARDWARE_CLASS += $(COMMON_PATH)/lineagehw
-
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
 ifneq ($(TARGET_BUILD_VARIANT),eng)
@@ -111,6 +108,9 @@ endif
 
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
+
+# Exclude serif fonts for saving system.img size.
+EXCLUDE_SERIF_FONTS := true
 
 # Filesystem
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -160,18 +160,16 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 
 # SELinux
-# include device/qcom/sepolicy/sepolicy.mk
-# include device/qcom/sepolicy-legacy/sepolicy.mk
-# BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
+include device/qcom/sepolicy-legacy/sepolicy.mk
 
-BOARD_SEPOLICY_DIRS += \
-    $(COMMON_PATH)/sepolicy-tmp
+BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
+
+PLATFORM_SEPOLICY_VERSION_TEST := false
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Sensor Compat
 BOARD_GLOBAL_CFLAGS += -DCOMPAT_SENSORS_M
-
-#Sound Picker
-TARGET_USE_OLD_SOUND_PICKER := true
 
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
@@ -209,4 +207,3 @@ ifeq ($(WITH_TWRP),true)
 endif
 
 -include vendor/pantech/msm8974-common/BoardConfigVendor.mk
-
