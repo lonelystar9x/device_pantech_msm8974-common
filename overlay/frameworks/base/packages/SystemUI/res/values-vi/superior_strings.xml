@@ -195,4 +195,26 @@
     <string name="quick_settings_navbar_title">Thanh điều hướng</string>
     <string name="accessibility_quick_settings_navbar_on">Mở thanh điều hướng</string>
     <string name="accessibility_quick_settings_navbar_off">Tắt thanh điều hướng</string>
+    <!-- QS long-press actions -->
+    <string name="tuner_qs_long_press_action">Không hiển thị bảng khi nhấn giữ</string>
+    <!-- Running service button -->
+    <string name="accessibility_quick_settings_running_services">Mở màn hình Dịch vụ chạy.</string>
+    <!-- Theme tile -->
+    <string name="system_theme_style_title">Chủ đề hệ thống</string>
+    <string name="quick_settings_theme_tile_title">Chủ đề</string>
+    <string name="quick_settings_theme_tile_style_detail_title">Chọn chủ đề</string>
+    <string name="system_theme_style_light">Sáng</string>
+    <string name="system_theme_style_dark">Tối Google</string>
+    <string name="system_theme_style_solarized_dark">Tối mặt trời</string>
+    <string name="system_theme_style_baked_green">Đen xanh</string>
+    <string name="system_theme_style_choco_x">Sô cô la</string> 
+    <string name="system_theme_style_pitch_black">Bóng đen</string>
+    <string name="system_theme_style_dark_grey">Xám đen</string>
+    <string name="system_theme_style_material_ocean">Tối đại dương</string>
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">Đồng bộ</string>
+    <string name="accessibility_quick_settings_sync_off">Đồng bộ tắt.</string>
+    <string name="accessibility_quick_settings_sync_on">Đồng bộ mở.</string>
+    <string name="accessibility_quick_settings_sync_changed_off">Đồng bộ đã tắt.</string>
+    <string name="accessibility_quick_settings_sync_changed_on">Đồng bộ đã mở.</string>
 </resources>
