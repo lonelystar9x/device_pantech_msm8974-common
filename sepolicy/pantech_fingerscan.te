@@ -1,0 +1,2 @@
+type pantech_fingerscan_device, dev_type, file_type;
+type pantech_fingerscan_sysfs, dev_type, file_type;
