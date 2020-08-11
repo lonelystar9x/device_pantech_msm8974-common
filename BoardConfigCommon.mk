@@ -71,7 +71,7 @@ AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
 AUDIO_FEATURE_ENABLED_NEW_SAMPLE_RATE := true
 AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 AUDIO_FEATURE_LOW_LATENCY_PRIMARY := true
-USE_CUSTOM_AUDIO_POLICY := 1
+# USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
 
@@ -108,9 +108,6 @@ endif
 
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
-
-# Exclude serif fonts for saving system.img size.
-EXCLUDE_SERIF_FONTS := true
 
 # Filesystem
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -162,10 +159,8 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 # SELinux
 include device/qcom/sepolicy-legacy/sepolicy.mk
 
-BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
-
-PLATFORM_SEPOLICY_VERSION_TEST := false
+BOARD_SEPOLICY_DIRS += \
+    $(COMMON_PATH)/sepolicy
 SELINUX_IGNORE_NEVERALLOWS := true
 
 # Sensor Compat
@@ -207,3 +202,4 @@ ifeq ($(WITH_TWRP),true)
 endif
 
 -include vendor/pantech/msm8974-common/BoardConfigVendor.mk
+

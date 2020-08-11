@@ -297,7 +297,13 @@
     <string name="clock_date_right">Bên phải đồng hồ</string>
     <string name="clock_date_left">Bên trái đồng hồ</string>
     <string name="clock_date_position">Vị trí ngày</string>
-
+    <string name="status_bar_clock_auto_hide_title">Tự động ẩn</string>
+    <string name="status_bar_clock_auto_hide_summary">Ẩn và hiển thị đồng hồ trong khoảng thời gian thường xuyên để tiết kiệm không gian thanh trạng thái</string>
+    <string name="status_bar_clock_auto_hide_hdur_title">Thời gian ẩn</string>
+    <string name="status_bar_clock_auto_hide_hdur_summary">Số giây để ẩn thời gian</string>
+    <string name="status_bar_clock_auto_hide_sdur_title">Thời gian hiện</string>
+    <string name="status_bar_clock_auto_hide_sdur_summary">Số giây chờ đợi trước khi ẩn đồng hồ</string>
+    
     <!-- Statusbar Clock Font Style & Size -->
     <string name="status_bar_clock_font_style_title">Kiểu chữ đồng hồ</string>
     <string name="status_bar_clock_font_size_title">Cỡ chữ đồng hồ</string>
@@ -674,4 +680,62 @@
     <!-- Running Services button -->
     <string name="qs_running_services_title">Biểu tượng dịch vụ đang chạy</string>
     <string name="qs_running_services_summary">Kích hoạt biểu tượng dịch vụ đang chạy ở chân trang</string>
+
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_title">Điểm ảnh thông minh</string>
+    <string name="smart_pixels_summary">Tùy chỉnh điểm ảnh thông minh</string>
+    <string name="smart_pixels_enable_title">Bật điểm ảnh thông minh</string>
+    <string name="smart_pixels_enable_summary">Tắt bớt điểm ảnh để tiết kiệm Pin</string>
+    <string name="smart_pixels_on_power_save_title">Tự động bật</string>
+    <string name="smart_pixels_on_power_save_summary">Tự động bật khi chế độ tiết kiệm Pin được bật</string>
+    <string name="smart_pixels_percent">Phần trăm điểm ảnh tắt</string>
+    <string name="smart_pixels_shift">Ngăn chặn burn-in bằng cách thay đổi điểm ảnh mỗi</string>
+    <string name="smart_pixels_shift_times_15s">15 giây</string>
+    <string name="smart_pixels_shift_times_30s">30 giây</string>
+    <string name="smart_pixels_shift_times_1min">1 phút</string>
+    <string name="smart_pixels_shift_times_2min">2 phút</string>
+    <string name="smart_pixels_shift_times_5min">5 phút</string>
+    <string name="smart_pixels_shift_times_10min">10 phút</string>
+    <string name="smart_pixels_shift_times_20min">20 phút</string>
+    <string name="smart_pixels_shift_times_30min">30 phút</string>
+    <string name="smart_pixels_shift_times_1h">1 giờ</string>
+
+    <!-- Pulse -->
+    <string name="pulse_help_policy_notice_summary">Xung không hoạt động với một số nguồn âm thanh khi nghe trên loa thiết bị</string>
+    <string name="pulse_settings">Xung</string>
+    <string name="pulse_settings_summary">Hiệu ứng âm thanh trên thanh điều hướng</string>
+    <string name="show_pulse_title">Hiện xung</string>
+    <string name="show_pulse_summary">Hiệu ứng âm thanh trên thanh điều hướng</string>
+    <string name="pulse_render_mode_title">Chế độ kết xuất</string>
+    <string name="pulse_render_mode_fading_bars">Khối mờ dần</string>
+    <string name="pulse_render_mode_solid_lines">Đường liền nét</string>
+    <string name="pulse_color">Màu</string>
+    <string name="pulse_color_mode">Chế độ màu</string>
+    <string name="pulse_color_accent">Màu nhấn</string>
+    <string name="pulse_color_custom">Tùy chỉnh</string>
+    <string name="pulse_color_lava_lamp">Đèn dung nham</string>
+    <string name="pulse_color_auto">Ảnh bìa tác phẩm</string>
+    <string name="pulse_color_chooser">Chọn màu</string>
+    <string name="smoothing_enabled_title">Bật làm mịn</string>
+    <string name="smoothing_enabled_summary">Mỗi thanh được hoạt hình trơn tru hơn</string>
+    <string name="pulse_advanced_category">Nâng cao</string>
+    <string name="pulse_legacy_mode_advanced_category">Cài đặt chế độ khối mờ dần</string>
+    <string name="pulse_custom_fudge_factor">Cấp độ tinh thần</string>
+    <string name="lavamp_speed_title">Tốc độ đèn dung nham</string>
+    <string name="pulse_solid_units_count">Số đường liền nét</string>
+    <string name="pulse_solid_lines_count">Số đường liền nét</string>
+    <string name="pulse_solid_units_opacity">Độ mờ đường nét</string>
+    <string name="pulse_solid_dimen_category">Cài đặt chế độ đường liền nét</string>
+    <string name="pulse_custom_dimen">Chiều rộng thanh</string>
+    <string name="pulse_custom_div">Khoảng cách thanh</string>
+    <string name="pulse_filled_block_size">Kích thước khối</string>
+    <string name="pulse_empty_block_size">Khoảng cách khối</string>
+    
+    <!-- Per App aspect Ratio -->
+    <string name="aspect_ratio_apps_enabled_title">Cho phép mở rộng</string>
+    <string name="aspect_ratio_apps_enabled_summary">Cho phép các ứng dụng cũ sử dụng toàn màn hình</string>
+    <string name="aspect_ratio_apps_list_title">Ứng dụng được phép mở rộng</string>
+    <string name="aspect_ratio_category_title">Mở rộng ứng dụng cũ</string>
+    <string name="aspect_ratio_apps_info">Các ứng dụng cần được khởi động lại sau khi thay đổi</string>
+    <string name="action_save">Lưu</string>
 </resources>

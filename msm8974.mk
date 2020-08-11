@@ -40,10 +40,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service
 
-# Encryption
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
-    
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -136,6 +132,10 @@ PRODUCT_PACKAGES += \
 # Doze
 PRODUCT_PACKAGES += \
     VEGADoze
+    
+# Encryption
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
 # Graphics
 PRODUCT_PACKAGES += \
