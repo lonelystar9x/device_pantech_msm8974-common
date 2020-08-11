@@ -95,9 +95,6 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 # Offmode Charging
 BOARD_HEALTHD_CUSTOM_CHARGER_RES := $(COMMON_PATH)/charger/images
 
-# Lineage Hardware
-BOARD_HARDWARE_CLASS += $(COMMON_PATH)/lineagehw
-
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
 ifneq ($(TARGET_BUILD_VARIANT),eng)
@@ -160,18 +157,14 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 
 # SELinux
-# include device/qcom/sepolicy/sepolicy.mk
-# include device/qcom/sepolicy-legacy/sepolicy.mk
-# BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
+include device/qcom/sepolicy-legacy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
-    $(COMMON_PATH)/sepolicy-tmp
+    $(COMMON_PATH)/sepolicy
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Sensor Compat
 BOARD_GLOBAL_CFLAGS += -DCOMPAT_SENSORS_M
-
-#Sound Picker
-TARGET_USE_OLD_SOUND_PICKER := true
 
 # HWUI
 HWUI_COMPILE_FOR_PERF := true

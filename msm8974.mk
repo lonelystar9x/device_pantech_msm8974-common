@@ -19,8 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -167,6 +166,7 @@ PRODUCT_COPY_FILES += \
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/keylayout/cr-tk-300k.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/cr-tk-300k.kl \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl
 
 # Keymaster
@@ -263,12 +263,6 @@ PRODUCT_COPY_FILES += \
 # Thermal config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-8974.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/thermal-engine-8974.conf
-
-# Weather providers
-PRODUCT_PACKAGES += \
-    OpenWeatherMapWeatherProvider \
-    YahooWeatherProvider \
-    WundergroundWeatherProvider
 
 # USB
 PRODUCT_PACKAGES += \
