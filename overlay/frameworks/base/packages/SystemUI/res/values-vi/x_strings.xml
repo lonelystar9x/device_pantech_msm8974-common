@@ -218,9 +218,6 @@
     <!-- Power menu item for screenrecord [CHAR LIMIT=20]-->
     <string name="global_action_screenrecord">Ghi m.hình</string>
 
-    <!--Screenrecord Tile-->
-    <string name="screenrecorder_title_tile">Ghi m.hình</string>
-    
     <!-- Name of the camera status bar icon. -->
     <string name="status_bar_camera">Máy ảnh</string>
     <!-- Name of the location status bar icon. -->
