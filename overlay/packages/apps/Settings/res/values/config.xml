@@ -12,7 +12,6 @@
 -->
 
 <resources>
-
     <!-- Battery Health -->
     <bool name="config_supportBatteryHealth">false</bool>
     

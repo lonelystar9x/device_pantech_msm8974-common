@@ -1,1 +1,3 @@
 allow isolated_app app_data_file:file setattr;
+allow isolated_app self:udp_socket create;
+allow isolated_app tombstoned_crash_socket:sock_file write;

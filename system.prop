@@ -79,9 +79,6 @@ persist.data.qmi.adb_logmask=0
 ro.qc.sdk.camera.facialproc=true
 ro.qc.sdk.gestures.camera=false
 
-# Time services
-persist.timed.enable=true
-
 # Wifi
 wifi.interface=wlan0
 wifi.supplicant_scan_interval=15

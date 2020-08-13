@@ -1,2 +1,7 @@
 allow system_app device:chr_file { ioctl open read write };
 allow system_app tee_device:chr_file getattr;
+
+allow system_app proc_pagetypeinfo:file { getattr open read };
+allow system_app rootfs:dir read;
+allow system_app sysfs_zram:dir search;
+allow system_app sysfs_zram:file { getattr open read };

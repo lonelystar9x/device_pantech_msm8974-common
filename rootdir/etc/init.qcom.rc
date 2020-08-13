@@ -74,6 +74,9 @@ on boot
 
     chown system system /sys/devices/fb000000.qcom,wcnss-wlan/wcnss_build_version
 
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
+    
     #Create QMUX deamon socket area
     mkdir /dev/socket/qmux_radio 0770 radio radio
     chmod 2770 /dev/socket/qmux_radio
@@ -269,9 +272,6 @@ on post-fs-data
     #Create directory for FOTA
     mkdir /data/fota 0771
     chown system system /data/fota
-
-    # Create /data/time folder for time-services
-    mkdir /data/time/ 0700 system system
 
     mkdir /data/audio/ 0770 media audio
 

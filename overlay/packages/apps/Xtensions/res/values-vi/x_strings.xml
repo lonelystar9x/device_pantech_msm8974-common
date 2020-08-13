@@ -188,7 +188,7 @@
 
     <!-- Power menu on lockscreen -->
     <string name="lockscreen_power_menu_disabled_title">Tắt menu nguồn trên màn hình khóa</string>
-    <string name="lockscreen_power_menu_disabled_summary">TĐiều này sẽ chỉ vô hiệu hóa menu nguồn trên màn hình khóa an toàn</string>
+    <string name="lockscreen_power_menu_disabled_summary">Điều này sẽ chỉ vô hiệu hóa menu nguồn trên màn hình khóa an toàn</string>
 
     <!-- Screenshot -->
     <string name="screenshot_type_title">Kiểu chụp màn hình</string>
@@ -341,7 +341,7 @@
     <string name="lock_clock_font_bold">Đậm</string>
     <string name="lock_clock_font_italic">Nghiêng</string>
     <string name="lock_clock_font_bold_italic">Đậm nghiêng</string>
-    <string name="lock_clock_font_light_italic">Nghieng nhỏ</string>
+    <string name="lock_clock_font_light_italic">Nghiêng nhỏ</string>
     <string name="lock_clock_font_thin_italic">Mỏng nghiêng</string>
     <string name="lock_clock_font_light">Nhỏ</string>
     <string name="lock_clock_font_thin">Mỏng</string>
@@ -853,6 +853,11 @@
     <!-- Status bar - Battery custom charging symbol -->
     <string name="text_charging_symbol_title">Biểu tượng sạc tùy chỉnh cho kiểu văn bản</string>
     <string name="text_charging_symbol_dialog">Biểu tượng sạc tùy chỉnh gần văn bản phần trăm pin</string>
+    <string name="text_charging_symbol_default">Tắt</string>
+    <string name="text_charging_symbol_flash">Tia chớp</string>
+    <string name="text_charging_symbol_tilde">Dấu ngã</string>
+    <string name="text_charging_symbol_plus">Dấu +</string>
+    <string name="text_charging_symbol_star">Sao</string>
 
     <!-- StatusBar weather settings -->
     <string name="sb_weather_title">Thời tiết SB</string>
@@ -927,7 +932,12 @@
     <string name="lockscreen_charging_animation_title">Hiệu ứng sạc LS</string>
     <string name="lockscreen_charging_animation_summary">Hiển thị hình động Lottie khi thiết bị đang sạc</string>
     <string name="lockscreen_charging_animation_off">Tắt</string>
-
+    <string name="lockscreen_charging_animation_flash">Tia chớp</string>
+    <string name="lockscreen_charging_animation_battery">PIN</string>
+    <string name="lockscreen_charging_animation_drop">Rơi xuống</string>
+    <string name="lockscreen_charging_animation_explosion">Vụ nổ</string>
+    <string name="lockscreen_charging_animation_water">Nước chảy</string>
+    
     <!-- Ambient edge lighting -->
     <string name="notification_screen_title">Màn hình</string>
     <string name="pulse_ambient_light_title">Ánh sáng cạnh</string>
@@ -942,7 +952,7 @@
     <string name="pulse_ambient_light_layout_title">Xem ánh sáng cạnh</string>
     <string name="pulse_ambient_light_layout_solid">Liền nét</string>
     <string name="pulse_ambient_light_layout_faded">Tan biến</string>
-    <string name="pulse_ambient_random_color_title">Mau ngẫu nhiên</string>
+    <string name="pulse_ambient_random_color_title">Màu ngẫu nhiên</string>
     <string name="pulse_ambient_random_color_summary">Đặt màu ngẫu nhiên cho xung ánh sáng cạnh</string>
     
     <!-- Blink flashlight for incoming calls -->
@@ -1000,7 +1010,7 @@
     <string name="file_header_select_title">Ảnh từ bộ nhớ</string>
     <string name="file_header_select_summary">Chọn hình ảnh từ bộ lưu trữ</string>
     <string name="file_header_provider_title">Hình ảnh duy nhất</string>
-
+    <string name="status_bar_custom_header_height_title">Độ cao hình ảnh</string>
 
     <!-- Force expanded notifications -->
     <string name="force_expanded_notifications_title">Buộc mở rộng thông báo</string>
@@ -1020,7 +1030,10 @@
     <string name="statusbar_notifi_cat">Thông báo Ticker</string>
     <string name="status_bar_show_ticker_summary">Xem trước thông báo trên thanh trạng thái</string>
     <string name="ticker_animation_mode_title">Ảnh động Ticker</string>
-
+    <string name="ticker_animation_mode_alpha_fade">Mờ dần</string>
+    <string name="ticker_animation_mode_scroll">Cuộn</string>
+    <string name="ticker_tick_duration_title">Thời gian Ticker</string>
+    
     <!-- Old Mobile Icons -->
     <string name="use_old_mobiletype_title">Sử dụng kiểu di động cũ</string>
     <string name="use_old_mobiletype_summary">Hợp nhất các tín hiệu và loại biểu tượng</string>
