@@ -733,7 +733,7 @@
     <string name="lockscreen_visualizer_enable_summary">Hiển thị thanh hiệu ứng trong khi phát nhạc</string>
 
     <!-- LS Pulse Visualizer -->
-    <string name="visualizer_ui_title">Hiệu ứng m.hinh khóa</string>
+    <string name="visualizer_ui_title">Hiệu ứng m.hình khóa</string>
     <string name="visualizer_ui_summary">Tùy chỉnh giao diện của hiệu ứng</string>
     <string name="lockscreen_lava_lamp_category">Cài đặt đèn dung nham</string>
     <string name="lockscreen_autocolor_title">Màu tự động</string>
